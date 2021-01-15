@@ -43,6 +43,11 @@ public class CallRecyclerAdapter extends RecyclerView.Adapter<CallRecyclerAdapte
         return mCalls.size();
     }
 
+    @Override
+    public int getItemViewType(int position) {
+        return position;
+    }
+
     public class CallViewHolder extends RecyclerView.ViewHolder {
 
         private final ImageView mUserAvatar;

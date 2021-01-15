@@ -45,6 +45,10 @@ public class StatusRecyclerAdapter extends RecyclerView.Adapter<StatusRecyclerAd
         return mStatusUsers.size();
     }
 
+    public int getItemViewType(int position) {
+        return position;
+    }
+
     public class StatusViewHolder extends RecyclerView.ViewHolder {
 
         private final ImageView mLatestStatusViewer;
