@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@color/color_imageBackground"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp">
+
+            <ImageView
+                android:id="@+id/row_chat_userImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_imageBackground"
+                android:src="@drawable/ic_user" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:id="@+id/row_chat_selection_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|end"
+            android:background="@color/color_onPrimary"
+            app:cardBackgroundColor="@color/color_onPrimary"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            tools:visibility="visible"
+            app:cardMaxElevation="1dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                app:srcCompat="@drawable/ic_check"
+          />
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/row_chat_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/color_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame"
+        tools:text="Hazem Muhammad" />
+
+    <TextView
+        android:id="@+id/row_chat_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@+id/row_chat_username"
+        app:layout_constraintStart_toStartOf="@+id/row_chat_username"
+        app:layout_constraintTop_toBottomOf="@+id/row_chat_username"
+        tools:text="blbalbalblalbablablalbalbalbalblablbalbalballabalbalblablalbllablalblllablalb" />
+
+    <View
+        android:id="@+id/row_chat_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/row_chat_message"
+        app:layout_constraintTop_toBottomOf="@+id/frame" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

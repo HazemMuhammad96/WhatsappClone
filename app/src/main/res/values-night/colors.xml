@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#202D34</color>
+    <color name="color_primaryVariant">#0D1F22</color>
+    <color name="color_accent">#00AF9A</color>
+    <color name="color_onPrimary">#0E1E22</color>
+    <color name="color_tabTextColor">#B3BABD</color>
+    <color name="color_tabIndicator">#00AF9A</color>
+    <color name="color_imageBackground">#6A7779</color>
+    <color name="color_username">#fff</color>
+    <color name="color_infoCardBackground">#202D34</color>
+    <color name="color_selection">#23BFBFBF</color>
+
+</resources>
